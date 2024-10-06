@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #525252;
+}
+
+.container {
+    background-color: #2c2c2c;
+    color: orange;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 500px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+input[type="number"] {
+    padding: 8px;
+    width: 50px;
+    background:#2c2c2c;
+    color: white;
+    box-shadow: inset 0px 0px 0px 2px white;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 0px 2px rgb(0, 0, 0);
+
+}
+
+#guessSection {
+    margin-top: 20px;
+}

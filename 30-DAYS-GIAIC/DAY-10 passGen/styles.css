@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #434343;
+}
+
+.header h1 {
+    text-align: center;
+ 
+}
+
+.password-generator {
+    width: 500px;
+    background: rgb(55, 55, 55);
+    padding: 50px;
+    box-shadow: 2px 4px 40px 8px black;
+    border-radius: 10px;
+    color: darkorange;
+}
+
+.input-group, .options, .output {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+input[type="number"], textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5c5c5c;
+}
+#generatedPassword{
+    padding: 10px;
+    margin: 9px;
+    
+}

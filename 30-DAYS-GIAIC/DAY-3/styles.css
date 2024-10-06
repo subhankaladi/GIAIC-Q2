@@ -1,0 +1,59 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #505050;
+}
+
+.container {
+    text-align: center;
+    background: rgb(53, 53, 53);
+    padding: 20px;
+    border-radius: 8px;
+    color: orange;
+    box-shadow: 4px 2px 20px 20px rgb(0 0 0 / 10%);
+}
+
+.candles span, .balloons span {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Add this to styles.css */
+.lit span {
+    animation: flicker 1s infinite;
+}
+
+.popped span {
+    animation: rise 1s forwards;
+}
+
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+@keyframes rise {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-200px); opacity: 0; }
+}
+h2{
+    margin-bottom: 100px;
+}

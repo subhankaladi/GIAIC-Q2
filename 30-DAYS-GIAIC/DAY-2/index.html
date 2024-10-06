@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Widget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="weather-widget">
+        <h1>Project-2 With Subhan</h1>
+        <h2>Weather Widget</h2>
+        <p>Search for the current weather conditions in your city.</p>
+        <input type="text" id="cityInput" placeholder="Enter a city name">
+        <button onclick="fetchWeather()">Search</button>
+        <div id="weatherResult" class="weather-result hidden">
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="city"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

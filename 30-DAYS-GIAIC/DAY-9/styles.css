@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(90, 90, 90);
+}
+
+.header h1 {
+    color: darkorange;
+    text-align: center;
+}
+
+.tip-calculator {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    background-color: #373737;
+    box-shadow: 1px 0px 20px 2px black;
+    
+}
+
+.tip-calculator h2, label, button, p {
+    color: darkorange;
+}
+
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button{
+    color: black;
+    font-weight: bold;
+}
