@@ -1,0 +1,102 @@
+.mnpg-container{
+    height: 100vh;
+    width: 98vw;
+}
+
+.LP-navbar{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0 50px 0 100px;
+    padding: 20px;
+}
+.LP-inner-list{
+    display: flex;
+    gap: 30px;
+}
+.mn-video{
+    position: absolute;
+    top: -420px;
+    left: 0;
+    object-fit: cover; /* Ensures video covers the background */
+    z-index: -1; /* Places video behind all content */
+}
+.skills-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 24px;
+    color: white;
+    z-index: 1;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 2s ease-in forwards; /* Fade-in animation */
+    font-weight: bold;
+    font-size: 34px;
+}
+
+/* Keyframes for the fadeIn animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start fully transparent */
+    }
+    to {
+        opacity: 1; /* End fully visible */
+    }
+}
+
+.new-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .image-container img {
+    max-width: 300px;
+    border-radius: 10px;
+  }
+  
+  .intro-container {
+    max-width: 500px;
+    color:white
+  }
+  
+  .intro-container h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+.my-img{
+
+    img{
+        width: 300px; 
+  height: 300px; 
+  border-radius: 50%; 
+  border: 5px solid rgb(99, 56, 253); 
+  box-shadow: 0 0 15px 5px #5f33ff; 
+  object-fit: cover; 
+  transition: transform 0.3s ease; 
+
+    }
+    img:hover{
+        transform: scale(1.05); 
+
+    }
+}
+
+
+.my-intro-and-img{
+    margin-top: 50px;
+    gap: 100px;
+    display: flex;
+    align-items: center; /* Aligns items vertically at the center */
+    justify-content: center; /* Centers the items horizontally */
+    justify-content: space-around;
+}
+.my-intro{
+    max-width: 500px;
+text-align: center;
+font-size: 24px;
+font-family: sans-serif;
+
+}
