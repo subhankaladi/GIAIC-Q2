@@ -1,0 +1,348 @@
+
+
+.heading-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content:space-between;
+    padding: 50px;
+    color: white;
+    font-size: 1.5rem;
+    flex-wrap: wrap; 
+
+  }
+  .logo-section{
+    display: flex;
+  }
+  .portfolio-div{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+  
+  }
+  .navbar-div ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+  flex-wrap: wrap; 
+  }
+  
+  .navbar-div ul li {
+    margin: 0 10px; 
+    border: 2px solid rgba(0, 179, 192, 0.616);
+    padding: 5px;
+    box-shadow: 0 0 2px 1px rgba(0, 179, 192, 0.5);
+    border-radius: 5px; 
+  }
+  .navbar-div ul li:hover{
+    box-shadow: 0 0 25px 2px rgb(0, 225, 250);
+    
+  }
+  
+  .main-div{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px;
+
+    
+  }
+  .subhan-logo{
+    width: 400px;
+    height: 400px;
+    transition: transform 0.3s ease;  /* Smooth transition for hover effect */
+
+
+
+
+  }
+  .subhan-logo:hover{
+  transform: scale(1.05);  /* Slight zoom on hover */
+
+
+
+    }
+  .mid-div{
+    display: flex;
+    margin: 70px 0 0 0;
+    gap: 450px;
+    font-family: Arial, Helvetica, sans-serif;
+
+  
+  
+    
+  }
+  .intro-div{
+    
+      max-width: 500px; 
+      word-wrap: break-word; 
+      overflow-wrap: break-word;
+      line-height: 1.5; 
+    
+    
+  }
+  .hello-div, .skills-div, .name-div{
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+  }
+  .name-div{
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  img{
+    width: 50px;
+  }
+  .auto-type{
+    color: rgb(0, 225, 250);
+  }
+  /* button{
+    margin-left: 50px;
+    
+    border: none;
+    background-color: rgb(0, 225, 250);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px 0px rgb(0, 225, 250);
+    padding: 10px 40px 10px 40px;
+  } */
+  Link{
+    text-decoration: none;
+  }
+  
+  .navbar-div ul li a {
+    color: white; 
+    text-decoration: none; 
+  }
+  
+  .navbar-div ul li a:hover {
+    text-decoration: none; 
+    
+    
+    
+  }
+  
+  
+  
+  .navbar-div ul li a:visited {
+    color: white;
+  }
+  
+  
+ 
+@media (max-width: 768px) {
+  .heading-div {
+    padding: 10px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .navbar-div ul {
+    gap: 10px;
+  }
+
+  .mid-div {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .subhan-logo {
+margin: 0 0 0 100px;
+  }
+
+  .hello-div, .name-div, .skills-div {
+    font-size: 1.8rem;
+  }
+  
+
+
+  
+}
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+  .heading-div {
+    padding: 10px;
+    font-size: 1.2rem;
+    gap: 20px;
+   
+  }
+  
+  .animated-button1{
+    margin: 0 0 0 100px;
+  }
+
+  .navbar-div ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    
+  }
+  
+
+  .main-div {
+    padding: 15px;
+    justify-content: center;
+    
+  }
+
+  .subhan-logo {
+margin: 0 100px 0 0;    
+  }
+
+  .hello-div, .name-div, .skills-div {
+    font-size: 1.5rem;
+  }
+
+  .intro-div {
+    max-width: 100%;
+    
+  }
+
+  
+}
+#animated-button{
+  margin: 0 0 0 50px;
+}
+/* button:hover{
+  box-shadow: 0 0 25px 2px rgb(0, 225, 250);
+
+} */
+
+
+
+
+
+
+
+
+.animated-button1 {
+  background: linear-gradient(-30deg, #051121 50%, #040e1d 50%);
+  padding: 20px 40px;
+  margin: 12px;
+  display: inline-block;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  overflow: hidden;
+  color: #f7d4d4;
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.animated-button1::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #0bafe1;
+  opacity: 0;
+  -webkit-transition: .2s opacity ease-in-out;
+  transition: .2s opacity ease-in-out;
+}
+
+.animated-button1:hover::before {
+  opacity: 0.2;
+}
+
+.animated-button1 span {
+  position: absolute;
+}
+
+.animated-button1 span:nth-child(1) {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(43, 8, 8, 0)), to(#00b7ff));
+  background: linear-gradient(to left, rgba(43, 8, 8, 0), #00b7ff);
+  -webkit-animation: 2s animateTop linear infinite;
+          animation: 2s animateTop linear infinite;
+}
+
+@keyframes animateTop {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.animated-button1 span:nth-child(2) {
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 2px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(43, 8, 8, 0)), to(#00b7ff));
+  background: linear-gradient(to top, rgba(43, 8, 8, 0), #00b7ff);
+  -webkit-animation: 2s animateRight linear -1s infinite;
+          animation: 2s animateRight linear -1s infinite;
+}
+
+@keyframes animateRight {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+.animated-button1 span:nth-child(3) {
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(43, 8, 8, 0)), to(#00b7ff));
+  background: linear-gradient(to right, rgba(43, 8, 8, 0), #00b7ff);
+  -webkit-animation: 2s animateBottom linear infinite;
+          animation: 2s animateBottom linear infinite;
+}
+
+@keyframes animateBottom {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+.animated-button1 span:nth-child(4) {
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 2px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 8, 8, 0)), to(#00b7ff));
+  background: linear-gradient(to bottom, rgba(43, 8, 8, 0), #00b7ff);
+  -webkit-animation: 2s animateLeft linear -1s infinite;
+          animation: 2s animateLeft linear -1s infinite;
+}
+
+@keyframes animateLeft {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
