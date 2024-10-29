@@ -1,0 +1,21 @@
+ul{
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: darkred;
+
+
+}
+h1{
+  text-align: center;
+  color: darkred;
+  font-family: sans-serif;
+}
